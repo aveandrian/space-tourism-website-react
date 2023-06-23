@@ -13,7 +13,7 @@ body {
 }
 
 #root {
-    min-height: 100vh;
+    min-height: 100%;
     min-width: 100vw;
     overflow-x: hidden;
     display: flex;
@@ -26,15 +26,47 @@ body {
     font-size: 9.375rem;
 }
 
-.heading5 {
+.heading2 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 6.25rem;
     font-weight: 400;
+}
+
+.heading5 {
+    
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.75rem;     
     letter-spacing: 0.3rem;
 }
 
-@media screen and (max-width: 500px) { 
+.subheading1 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+.subheading2 {
+    font-size: 0.875rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.14763rem;
+    text-transform: uppercase;
+}
+
+.body-text {
+    font-size: 1.125rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 2rem;
+}
+
+.nav-text {
+    font-size: 1rem;
+    letter-spacing: 0.27em;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 750px) { 
     .heading5 {
         font-size: 1rem;
         letter-spacing: 0.16875rem;

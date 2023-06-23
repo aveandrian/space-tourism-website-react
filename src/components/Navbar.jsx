@@ -15,10 +15,10 @@ export default function Navbar(){
             <div className="nav-divider"></div>
             <img className="menu-btn" src={`/assets/shared/icon-${isOpen ? "close" : "hamburger"}.svg`} onClick={toggleIsOpen} />
             <div className={`nav-items ${isOpen ? "opened" : ""}`}>
-                <NavLink to={`/`}  ><span className="nav-item-number">00</span> Home</NavLink>
-                <NavLink to={`/destination`}  ><span className="nav-item-number">01</span> Destination</NavLink>
-                <NavLink to={`/crew`}  ><span className="nav-item-number">02</span> Crew</NavLink>
-                <NavLink to={`/technology`}  ><span className="nav-item-number">03</span> Technology</NavLink>
+                <NavLink to={`/`} onClick={()=>setIsOpen(false)} ><span className="nav-item-number">00</span> Home</NavLink>
+                <NavLink to={`/destination`} onClick={()=>setIsOpen(false)} ><span className="nav-item-number">01</span> Destination</NavLink>
+                <NavLink to={`/crew`} onClick={()=>setIsOpen(false)} ><span className="nav-item-number">02</span> Crew</NavLink>
+                <NavLink to={`/technology`} onClick={()=>setIsOpen(false)} ><span className="nav-item-number">03</span> Technology</NavLink>
             </div>
         </nav>
     )
