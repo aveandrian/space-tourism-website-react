@@ -1,7 +1,8 @@
 .destination-page {
     top: 0;
     left: 0;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100vw;
     background-image: url('/assets/destination/background-destination-desktop.jpg');
     background-size: 100% 100%;
@@ -14,8 +15,8 @@
     color: white;
     display: flex;
     flex-direction: column;
-   
     justify-content: space-between;
+    gap: 50px;
     width: 100%;
     height: 100%;
 }
