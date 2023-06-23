@@ -30,6 +30,7 @@ nav {
     height: 100%;
     flex-shrink: 1;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     display: flex;
     align-items: center;
     gap: 30px;
