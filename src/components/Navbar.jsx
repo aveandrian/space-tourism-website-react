@@ -11,7 +11,7 @@ export default function Navbar(){
 
     return (
         <nav className={isOpen ? "opened" : ""}>
-            <img className="logo" src="/assets/shared/logo.svg" alt="Logo" />
+            <NavLink to={'/'}><img className="logo" src="/assets/shared/logo.svg" alt="Logo" /></NavLink>
             <div className="nav-divider"></div>
             <img className="menu-btn" src={`/assets/shared/icon-${isOpen ? "close" : "hamburger"}.svg`} onClick={toggleIsOpen} />
             <div className={`nav-items ${isOpen ? "opened" : ""}`}>
