@@ -4,7 +4,6 @@ import '../styles/Destination.css'
 
 export default function Destination(){
     const [selectedDestination, setSelectedDestination] = useState('moon')
-    console.log(destinationData)
     return (
         <div className="destination-page">
             <div className="destination-page-wrapper">

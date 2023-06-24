@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import '../styles/Home.css'
 export default function Home(){
     return (
@@ -12,7 +13,7 @@ export default function Home(){
                     because we’ll give you a truly out of this world experience!
                 </p>
             </div>
-            <button className='home-page-btn'>EXPLORE</button>
+            <NavLink to={'destination'} className='home-page-btn'>EXPLORE</NavLink>
         </div>
     </div>
     )

@@ -53,6 +53,10 @@
     letter-spacing: 0.125rem;
     border: none;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .home-page-btn:hover {
