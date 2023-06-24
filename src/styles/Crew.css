@@ -1,0 +1,208 @@
+.crew-page {
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+    background-image: url('/assets/crew/background-crew-desktop.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 13% 10% 0 10%;
+}
+
+.crew-page-wrapper {
+    color: white;
+    width: 100%;
+    height: 44.5rem;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, auto);
+}
+
+.crew-page-title {
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    font-weight: 400;
+}
+
+.crew-divider {
+    display: none;
+}
+
+.crew-page-title-number{
+    font-weight: 700;
+    filter: opacity(0.25);
+}
+
+.crew-member-role {
+    color: #FFF;
+    opacity: 0.5042492151260376;
+    margin-bottom: 0.94rem;
+}
+
+.crew-member-name {
+    margin-bottom: 1.69rem;
+}
+
+.crew-member-bio {
+    color: #D0D6F9;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    width: 27.75rem;
+}
+
+.crew-member-img {
+    align-self: flex-end;
+    height: 91%;
+} 
+
+.crew-selector-container {
+    position: absolute;
+    bottom: 10vh;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.crew-selector {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.174362912774086;
+}
+
+.crew-selector.active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 950px) { 
+    .crew-page {
+        padding-top: 15%;
+        display: block;
+        background-image: url('/assets/crew/background-crew-tablet.jpg');
+        background-size: 100% 100%;
+        padding-inline: 40px;
+    }
+    .crew-page-wrapper {
+        height: fit-content;
+        justify-content: space-between;
+        grid-template-columns: 1fr;
+    }
+
+    .crew-page-title, .crew-selector-container {
+        position: relative;
+    }
+
+    .crew-page-title {
+        top: 0;
+        grid-row: 1;
+        margin-bottom: 3.75rem;
+    }
+    .crew-member-description {
+        grid-row: 2;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .crew-member-role {
+        font-size: 1.5rem;
+    }
+
+    .crew-member-name {
+        font-size: 2.5rem;
+    }
+
+    .crew-member-bio  {
+        width: 37rem;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        justify-self: center;
+    }
+
+    .crew-selector-container {
+        margin-block: 2.5rem;
+        justify-content: center;
+        grid-row: 3;
+        bottom: 0;
+    }
+    .crew-member-img {
+        grid-row: 4;
+        margin-top: auto;
+        height: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .crew-page {
+        padding: 0;
+        padding-inline: 1.5rem;
+        padding-bottom: 10%;
+        background-image: url('/assets/crew/background-crew-mobile.jpg');
+        background-size: 100% 100%;
+    }
+
+    .crew-page-wrapper {
+        margin-top: 15vh;
+    }
+
+    .crew-divider {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #FFF;
+        opacity: 0.7;
+        grid-row: 3;
+    }
+
+    .crew-page-title {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .crew-member-img {
+        grid-row: 2;
+        height: 13.875rem;
+    }
+
+    .crew-selector-container {
+        grid-row: 4;
+    }
+
+    .crew-member-description {
+        grid-row: 5;
+        width: 100%;
+    }
+
+    .crew-member-role {
+        font-size: 1rem;
+    }
+
+    .crew-member-name {
+        font-size: 1.5rem;
+    }
+
+    .crew-member-bio {
+        width: 100%;
+        font-size: 0.9375rem;
+    }
+
+    .crew-selector-container {
+        gap: 1rem;
+    }
+
+    .crew-selector {
+        height: 0.625rem;
+        width: 0.625rem;
+    }
+}
