@@ -47,14 +47,14 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid rgba(255 , 255 , 255 , 0.25);
+    border: 0.063rem solid rgba(255 , 255 , 255 , 0.25);
     color: white;
     font-size: 2rem;
 }
 
 .technology-selector:hover {
     cursor: pointer;
-    border: 1px solid rgba(255 , 255 , 255 , 1);
+    border: 0.063rem solid rgba(255 , 255 , 255 , 1);
 }
 
 .technology-selector.active {
@@ -97,7 +97,7 @@
     align-self: center;
 }
 
-@media screen and (max-width: 950px) { 
+@media screen and (max-width: 60rem) { 
     .technology-page {
         padding-block: 15%;
         padding-inline: 0;
@@ -145,7 +145,7 @@
     }
 }
 
-@media screen and (max-width: 750px) { 
+@media screen and (max-width: 47rem) { 
     .technology-page {
         padding: 0;
         padding-bottom: 10%;

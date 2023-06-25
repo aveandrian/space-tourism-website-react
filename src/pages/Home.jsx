@@ -15,6 +15,10 @@ export default function Home(){
             </div>
             <NavLink to={'destination'} className='home-page-btn'>EXPLORE</NavLink>
         </div>
+        <div className="attribution">
+              Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+              Coded by <a href="https://github.com/aveandrian">aveandrian</a>.
+        </div>
     </div>
     )
 }

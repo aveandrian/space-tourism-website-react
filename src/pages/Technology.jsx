@@ -22,7 +22,7 @@ export default function Technology(){
             </div>
             <picture className='technology-img'>
                 <source srcSet={technologyData[activeIndex].images.landscape}
-                        media="(max-width: 950px)" />
+                        media="(max-width: 60rem)" />
                 <img src={technologyData[activeIndex].images.portrait} alt="" />
             </picture>
         </div>

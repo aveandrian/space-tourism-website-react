@@ -7,11 +7,11 @@
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
-    padding: 12%;
+    padding: 12% 12% 0 12%;
 }
 
 .home-page-wrapper {
-    margin-top: auto;
+    margin-top: 5vh;
     color: white;
     display: flex;
     align-items: end;
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 400px;
+    width: 25rem;
 }
 
 .home-page-heading1 {
@@ -61,36 +61,44 @@
 
 .home-page-btn:hover {
     cursor: pointer;
-    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3.125rem rgba(255, 255, 255, 0.1);
+}
+
+.attribution, .attribution a {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    background-color:transparent;
+    color: #D0D6F9;
+    margin-top: auto;
+    padding-block: 2vh;
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 60rem) {
     .home-page {
-        padding-block: 150px;
         background-image: url('/assets/home/background-home-tablet.jpg');
         background-size: 100% 100%;
     }
 
     .home-page-wrapper {
+        justify-content: start;
         height: 100%;
         align-items: center;
         flex-direction: column;
         text-align: center;
-        gap: 50px;
+        gap: 3.125rem;
     }
 
     .home-page-content {
         width: 100%;
-        margin-bottom: auto;
     }
     .home-page-text {
-        padding-inline: 92px;
+        padding-inline: 5.75rem;
     }
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 47rem) {
     .home-page {
         background-image: url('/assets/home/background-home-mobile.jpg');
         background-size: 100% 100%;
@@ -101,7 +109,7 @@
     }
 
     .home-page-wrapper {
-        gap: 50px;
+        gap: 3.125rem;
         justify-content: center;
         padding-inline: 15%;
     }
@@ -121,6 +129,10 @@
         height: 9.375rem;
         font-size: 1.25rem;
         letter-spacing: 0.07813rem;
+    }
+
+    .attribution, .attribution a {
+        font-size: 0.9375rem;
     }
     
 }

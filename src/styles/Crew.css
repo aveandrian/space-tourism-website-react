@@ -80,7 +80,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 950px) { 
+@media screen and (max-width: 60rem) { 
     .crew-page {
         padding-top: 15%;
         display: flex;
@@ -145,7 +145,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 47rem) {
     .crew-page {
         padding: 0;
         padding-inline: 1.5rem;
