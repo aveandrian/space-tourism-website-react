@@ -6,8 +6,8 @@ export default function Destination(){
     const [selectedDestination, setSelectedDestination] = useState('moon')
     return (
         <div className="destination-page">
+            <h1 className="destination-page-title heading5"><span className="destination-page-title-number heading5">01 </span> Pick your destination</h1>
             <div className="destination-page-wrapper">
-                <h1 className="destination-page-title heading5"><span className="destination-page-title-number heading5">01 </span> Pick your destination</h1>
                 <div className="destination-container">
                     <img className="destination-img" src={`/assets/destination/image-${selectedDestination}.png`}></img>
                     <div className="destination-content">

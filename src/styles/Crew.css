@@ -23,9 +23,10 @@
 }
 
 .crew-page-title {
+    color: #FFF;
     position: absolute;
-    top: 5vh;
-    left: 0;
+    left: 10vw;
+    top: 18vh;
     font-weight: 400;
 }
 
@@ -82,7 +83,7 @@
 @media screen and (max-width: 950px) { 
     .crew-page {
         padding-top: 15%;
-        display: block;
+        display: flex;
         background-image: url('/assets/crew/background-crew-tablet.jpg');
         background-size: 100% 100%;
         padding-inline: 40px;
@@ -99,6 +100,7 @@
 
     .crew-page-title {
         top: 0;
+        left: 0;
         grid-row: 1;
         margin-bottom: 3.75rem;
     }
@@ -166,6 +168,7 @@
     }
 
     .crew-page-title {
+        top: 12vh;
         margin-bottom: 2rem;
         text-align: center;
     }

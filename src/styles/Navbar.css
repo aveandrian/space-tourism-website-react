@@ -25,6 +25,7 @@ nav {
     background-color: #979797;
 }
 .nav-items {
+    margin-left: auto;
     padding-inline: 120px;
     padding-right: 180px;
     height: 100%;
